@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>homePage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/diplom.css" rel="stylesheet">
+<link href="css/index_with_breakpoints.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="wwb16.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#services').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("#services").owlCarousel({autoplayTimeout:5000, margin: 0, autoplay: true, nav: false, loop: true, dots: true, responsive: {0: {items: 3},480: {items: 3}, slideBy: 1}});
+   $("a[href*='#portfolio']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolio').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolio()
+   {
+      var $obj = $("#wb_portfolio");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolio();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolio();
+   });
+   $("a[href*='#portfolioLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolioLayoutGrid()
+   {
+      var $obj = $("#wb_portfolioLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolioLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolioLayoutGrid();
+   });
+   $("a[href*='#questions']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_questions').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#moreCards']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_moreCards').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#news']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_news').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollnews()
+   {
+      var $obj = $("#wb_news");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollnews();
+   $(window).scroll(function(event)
+   {
+      onScrollnews();
+   });
+   $("a[href*='#footer']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_footer').offset().top-68 }, 600, 'easeOutCirc');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerIcon">
+<a href="./index.html"><div id="headerIcon"><i class="headerIcon"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_CssMenu1">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li class="nav-item firstmain"><a role="menuitem" class="nav-link" href="./index.html" target="_self">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;&nbsp;&#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./about.html" target="_self">&#1054;&nbsp;&#1085;&#1072;&#1089;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./articles-1.html" target="_self">&#1057;&#1090;&#1072;&#1090;&#1100;&#1080;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./team.html" target="_self">&#1050;&#1086;&#1084;&#1072;&#1085;&#1076;&#1072;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./contact.html" target="_self">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home-divider-top">
+<svg version="1.1" viewBox="0 0 240 24" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.33" d="M0,13.229V23.87h240V13.27C212.247,6.884,170.508,0,119.81,0 C69.18,0,27.642,6.884,0,13.229z" />
+<path class="divider-fill" style="opacity:0.33" d="M0,18.904V24h240v-5.036c-21.641-6.315-64.639-16.257-120.171-16.257 C64.351,2.707,21.572,12.589,0,18.904z" />
+<path class="divider-fill" d="M119.829,5.115C47.852,5.115,0,24,0,24h239.961C239.961,24,191.816,5.115,119.829,5.115z" />
+</svg>
+</div>
+<div id="home-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+</path>
+</svg></div>
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:13px;line-height:16px;"><span style="font-size:64px;line-height:71.5px;font-weight:bold;">Камышинская научная библиотека</span></p>
+</div>
+<a id="homeButton" href="#services">Подробнее</a>
+</div>
+</div>
+</div>
+<div id="wb_services">
+<div id="services" class="owl-carousel owl-theme">
+<div id="wb_servicesCard1">
+   <div id="servicesCard1-card-body">
+      <div id="servicesCard1-card-item0"><i class="fa fa-ambulance"></i></div>
+      <div id="servicesCard1-card-item1">Медицинские науки</div>
+      <div id="servicesCard1-card-item2">Совокупность эмпирических и теоретических дисциплин, исследующих строение, функции, состояние различных систем человеческого организма и человеческих общностей.<br><br></div>
+      <div id="servicesCard1-card-item3"><a href="./articles-1.html">Перейти</a></div>
+   </div>
+</div>
+<div id="wb_servicesCard2">
+   <div id="servicesCard2-card-body">
+      <div id="servicesCard2-card-item0"><i class="fa fa-child"></i></div>
+      <div id="servicesCard2-card-item1">Гуманитарные науки</div>
+      <div id="servicesCard2-card-item2">Науки, специализирующиеся на человеке и его жизнедеятельности в обществе.<br><br><br><br></div>
+      <div id="servicesCard2-card-item3"><a href="./articles-2.html">Перейти</a></div>
+   </div>
+</div>
+<div id="wb_Card16">
+   <div id="Card16-card-body">
+      <div id="Card16-card-item0"><i class="fa fa-gears"></i></div>
+      <div id="Card16-card-item1">Техника и технологии</div>
+      <div id="Card16-card-item2">Совокупность методов обработки, изготовления, изменения состояния, свойств, формы сырья или полуфабриката, осуществляемых в процессе производства продукции.<br><br></div>
+      <div id="Card16-card-item3"><a href="./articles-4.html">Перейти</a></div>
+   </div>
+</div>
+<div id="wb_servicesCard3">
+   <div id="servicesCard3-card-body">
+      <div id="servicesCard3-card-item0"><i class="fa fa-subscript"></i></div>
+      <div id="servicesCard3-card-item1">Естественные и точные науки</div>
+      <div id="servicesCard3-card-item2">Отрасли науки, в которых изучают количественно точные закономерности и используются строгие методы проверки гипотез, основанные на воспроизводимых экспериментах и строгих логических рассуждениях.</div>
+      <div id="servicesCard3-card-item3"><a href="./articles-3.html">Перейти</a></div>
+   </div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer">
+<div id="wb_upIcon">
+<a href="./index.html#home"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="wb_portfolio">
+<div id="portfolio-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+</path>
+</svg></div>
+<div id="portfolio">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading6">
+<h1 id="Heading6">Популярные статьи</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_portfolioLayoutGrid">
+<div id="portfolioLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_questionsHeading1">
+<h2 id="questionsHeading1">Have Questions?</h2>
+</div>
+<div id="wb_Card1">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0">Медицинские науки</div>
+      <div id="Card1-card-item1">ОЦЕНКА ФУНКЦИОНАЛЬНОГО СОСТОЯНИЯ КАРДИОРЕСПИРАТОРНОЙ СИСТЕМЫ УЧАЩИХСЯ С ПАТОЛОГИЕЙ ОРГАНОВ СЕНСОРНОЙ СИСТЕМЫ</div>
+      <div id="Card1-card-item2"><a href="./article.html">Перейти</a></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card2">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0">Гуманитарные науки</div>
+      <div id="Card2-card-item1">Ляушева С.А. Эволюция религиозных верований адыгов: история и современность</div>
+      <div id="Card2-card-item2"><a href="./article-2.html">Перейти</a></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_questions">
+<div id="questions-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.3" d="M 505.29,47.51947 C 346.07,47.51947 235.61,230.3 0,230.3 V 0.3 h 508 z" />
+<path class="divider-fill" style="opacity:0.4" d="M 485.29,47.44 C 326.07,47.44 235.61,214.36 0,214.36 V 0.2 h 485.29 z" />
+<path class="divider-fill" style="opacity:0.5" d="m 485.29,48.46999 q -9.42,-0.31 -20,-0.32 c -159.22,0 -229.68,151 -465.29,151 v -198.24 h 485.29 z" />
+<path class="divider-fill" d="M 0,182 V -0.27 H 1000 V 24.4 C 787.4,24.4 781,99.85 702.92,99.85 645,99.85 632.92,46.97 445.29,46.97 286.07,46.97 235.61,182 0,182 Z" />
+</svg></div>
+<div id="questions">
+<div class="col-1">
+<div id="wb_questionsHeading2">
+<h1 id="questionsHeading2">Есть Вопросы?<br>Хотите предоставить статью?</h1>
+</div>
+<a id="questionsButton" href="./index.html#footer">СВЯЗАТЬСЯ</a>
+</div>
+</div>
+</div>
+<div id="wb_moreCards">
+<div id="moreCards-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 458.89" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.3" d="M394.87 433.4C488.07 402 572.38 322.71 656.53 241c-73.83 19-145.79 48.57-216.67 77.31-98.09 39.78-199.68 78.93-304.4 86.55 84.78 42.95 173.24 57.58 259.41 28.54zM656.53 241c45.78-11.75 92.27-19.4 139.69-20.19 70.57-1.16 138.4 12.7 203.78 36.37V0c-59.88 17.86-118.67 47.58-174.92 89.39C767.3 132.33 712 187.19 656.53 241zM135.46 404.86C88.86 381.25 43.38 349.08 0 310.9v82.75a378.35 378.35 0 0 0 81.63 12.23 485.13 485.13 0 0 0 53.83-1.02z"/>
+<path class="divider-fill" d="M1000 458.89V257.18c-65.38-23.67-133.21-37.53-203.78-36.37-47.42.79-93.91 8.44-139.69 20.19-84.15 81.71-168.46 161-261.66 192.4-86.17 29-174.63 14.41-259.41-28.54a485.13 485.13 0 0 1-53.83 1A378.35 378.35 0 0 1 0 393.65v65.24z"/>
+</svg></div>
+<div id="moreCards">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_moreCards1">
+   <div id="moreCards1-card-body">
+      <div id="moreCards1-card-item0"><i class="fa fa-lightbulb-o"></i></div>
+      <div id="moreCards1-card-item1">About</div>
+      <div id="moreCards1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <hr id="moreCards1-card-item3">
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_moreCards2">
+   <div id="moreCards2-card-body">
+      <div id="moreCards2-card-item0"><i class="fa fa-lightbulb-o"></i></div>
+      <div id="moreCards2-card-item1">About</div>
+      <div id="moreCards2-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <hr id="moreCards2-card-item3">
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_moreCards3">
+   <div id="moreCards3-card-body">
+      <div id="moreCards3-card-item0"><i class="fa fa-lightbulb-o"></i></div>
+      <div id="moreCards3-card-item1">About</div>
+      <div id="moreCards3-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <hr id="moreCards3-card-item3">
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_news">
+<div id="news">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_newsHeading">
+<h1 id="newsHeading">Последние новости</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_newsContainer">
+<div id="newsContainer-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 458.89" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.3" d="M394.87 433.4C488.07 402 572.38 322.71 656.53 241c-73.83 19-145.79 48.57-216.67 77.31-98.09 39.78-199.68 78.93-304.4 86.55 84.78 42.95 173.24 57.58 259.41 28.54zM656.53 241c45.78-11.75 92.27-19.4 139.69-20.19 70.57-1.16 138.4 12.7 203.78 36.37V0c-59.88 17.86-118.67 47.58-174.92 89.39C767.3 132.33 712 187.19 656.53 241zM135.46 404.86C88.86 381.25 43.38 349.08 0 310.9v82.75a378.35 378.35 0 0 0 81.63 12.23 485.13 485.13 0 0 0 53.83-1.02z"/>
+<path class="divider-fill" d="M1000 458.89V257.18c-65.38-23.67-133.21-37.53-203.78-36.37-47.42.79-93.91 8.44-139.69 20.19-84.15 81.71-168.46 161-261.66 192.4-86.17 29-174.63 14.41-259.41-28.54a485.13 485.13 0 0 1-53.83 1A378.35 378.35 0 0 1 0 393.65v65.24z"/>
+</svg></div>
+<div id="newsContainer-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 22" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.33" d="m 239.971,0.03506085 c -4.61,-0.17416486 -9.552,0.31166344 -15,1.20998745 C 204.576,4.6559297 198.738,12.530015 185.552,17.095884 163.344,24.776555 144.006,3.7851053 119.933,3.7851053 94.252,3.7851053 89.447,26.941699 57.427,20.331684 34.632,15.582483 27.625,7.6350655 10.323,10.13754 7.613,10.540869 3.77,11.090863 0,11.796689 V 22 H 240 V 0.03506085 Z" />
+<path class="divider-fill" d="m 239.99,5.2731131 c -4.825,-0.584952 -10.606,-0.1919374 -17.48,0.813449 -20.276,2.943954 -24.593,9.9542389 -38.892,13.9026649 -23.967,6.65383 -39.71,-14.633855 -61.787,-14.633855 -23.521,0 -37.345,20.794132 -63.486,15.119183 C 39.701,16.406396 32.922,9.5240694 15.861,11.69936 9.751,12.476249 4.438,14.039168 0,17.816679 V 22 H 240 V 6.6011371 Z" />
+<path class="divider-fill" style="opacity:0.33" d="M 222.049,3.2571465 C 201.246,6.7240757 196.851,14.983196 182.2,19.643048 157.589,27.470666 141.472,2.4081215 118.858,2.4081215 94.734,2.4081215 80.571,26.930123 53.776,20.210617 34.707,15.400719 27.743,7.3112169 10.27,9.8648154 6.553,10.414678 3.121,11.28141 0,12.399774 V 22 H 240 V 2.3242443 C 234.979,1.6345862 229.1,2.0912517 222.049,3.2571465 Z" />
+</svg>
+</div>
+<div id="newsContainer">
+<div id="wb_newsCard4">
+   <div id="newsCard4-card-body">
+      <div id="newsCard4-card-item0">Ищем сотрудников для удаленной поддержки сайта, а так же авторов статей.</div>
+      <div id="newsCard4-card-item1">Ваша любимая администрация</div>
+   </div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_footerLabel2">
+<h3 id="footerLabel2">КОНТАКТЫ</h3>
+</div>
+<div id="wb_footerText">
+<p>Phone: +7 999 626 24 07</p>
+<p>Email: oleynikalexey98@gmail.com</p>
+<p>&nbsp;</p>
+</div>
+<div id="wb_IconFont1">
+<a href="https://vk.com/oleynikalexey"><div id="IconFont1"><i class="fa fa-vk"></i></div></a>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_footerLabel3">
+<h3 id="footerLabel3">ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+</div>
+<div id="wb_footerMenu">
+<ul id="footerMenu" role="menubar" class="nav">
+<li class="nav-item firstmain"><a role="menuitem" class="nav-link" href="./index.html" target="_self">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;&nbsp;&#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./about.html" target="_self">&#1054;&nbsp;&#1085;&#1072;&#1089;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./articles-1.html" target="_self">&#1057;&#1090;&#1072;&#1090;&#1100;&#1080;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./team.html" target="_self">&#1050;&#1086;&#1084;&#1072;&#1085;&#1076;&#1072;</a>
+</li>
+<li class="nav-item"><a role="menuitem" class="nav-link" href="./contact.html" target="_self">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
